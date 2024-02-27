@@ -1,0 +1,12 @@
+/* This adds a block ahead of the body content so the head of the graph does not get chopped off */
+body::before {
+  display: block;
+  content: '';
+  height: 40px;   /* Adds a ghost element of 40 pixels so the first elemenmt of the body gets pushed downward. */ 
+}
+
+@media(min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
